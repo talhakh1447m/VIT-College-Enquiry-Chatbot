@@ -4,6 +4,7 @@ Routes all web requests and API endpoints to the Flask WSGI application.
 """
 import os
 import sys
+import urllib.parse
 
 # Ensure project root is present in module search path
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -14,22 +15,27 @@ from app import app
 
 
 class VercelPathMiddleware:
-    """Restores the original request path from Vercel headers if rewritten."""
+    """Restores the original client request path when rewritten by Vercel."""
 
     def __init__(self, wsgi_app):
         self.wsgi_app = wsgi_app
 
     def __call__(self, environ, start_response):
-        # Vercel provides the client's requested URL path in HTTP_X_MATCHED_PATH, HTTP_X_FORWARDED_URI, or RAW_URI
-        orig = (
-            environ.get("HTTP_X_MATCHED_PATH")
-            or environ.get("HTTP_X_FORWARDED_URI")
-            or environ.get("RAW_URI")
-            or environ.get("REQUEST_URI")
-        )
-        if orig and orig != "/api/index.py" and not orig.startswith("/api/index.py"):
-            path = orig.split("?", 1)[0]
+        qs = environ.get("QUERY_STRING", "")
+        params = urllib.parse.parse_qs(qs, keep_blank_values=True)
+        if "__vercel_path" in params and params["__vercel_path"]:
+            path = params["__vercel_path"][0]
+            if not path.startswith("/"):
+                path = "/" + path
             environ["PATH_INFO"] = path
+
+            # Clean __vercel_path out of query string
+            filtered_params = {k: v for k, v in params.items() if k != "__vercel_path"}
+            environ["QUERY_STRING"] = urllib.parse.urlencode(filtered_params, doseq=True)
+        elif environ.get("PATH_INFO") == "/api/index.py":
+            # Fallback if accessed directly
+            environ["PATH_INFO"] = "/"
+
         return self.wsgi_app(environ, start_response)
 
 
