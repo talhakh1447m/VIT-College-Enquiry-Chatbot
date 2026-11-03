@@ -1,0 +1,51 @@
+{
+  "college_name": "Vidyalankar Institute of Technology (VIT), Mumbai",
+  "official_website": "https://vit.edu.in/",
+  "official_pages": [
+    {
+      "topic": "Admissions overview",
+      "url": "https://vit.edu.in/admissions/",
+      "note": "Check this official page for current admission categories, notices and fee-related resources."
+    },
+    {
+      "topic": "Undergraduate engineering admissions",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "note": "Check current official notices for B.Tech requirements, schedules and fees."
+    },
+    {
+      "topic": "Direct second-year engineering admissions",
+      "url": "https://vit.edu.in/admission-engineering-lateral-entry/",
+      "note": "Official page for direct second-year engineering admission information."
+    },
+    {
+      "topic": "Postgraduate engineering admissions",
+      "url": "https://vit.edu.in/admission-engineering-pg/",
+      "note": "Official page for M.Tech admission information."
+    },
+    {
+      "topic": "MMS admissions",
+      "url": "https://vit.edu.in/admission-mms/",
+      "note": "Official page for MMS admission information."
+    },
+    {
+      "topic": "Contact",
+      "url": "https://vit.edu.in/contact/",
+      "note": "Check this official page for current contact details."
+    }
+  ],
+  "verified_facts": [
+    {
+      "fact": "The official institute website is https://vit.edu.in/.",
+      "source": "https://vit.edu.in/"
+    },
+    {
+      "fact": "The official website has an admissions overview page.",
+      "source": "https://vit.edu.in/admissions/"
+    },
+    {
+      "fact": "The official website has a contact page.",
+      "source": "https://vit.edu.in/contact/"
+    }
+  ],
+  "accuracy_notice": "This starter knowledge base intentionally does not hardcode fee amounts, cutoffs, admission deadlines, placement statistics, or eligibility rules. These may change; verify them on the official linked pages."
+}

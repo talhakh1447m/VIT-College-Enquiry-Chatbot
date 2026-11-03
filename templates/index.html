@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+          var meta = document.querySelector('meta[name="color-scheme"]');
+          if (meta) meta.content = savedTheme;
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="theme-color" content="#0b1a30">
+  <meta name="description" content="Official AI-powered college enquiry assistant for Vidyalankar Institute of Technology (VIT), Mumbai. Get verified information on B.Tech admissions, cutoffs, fees, placements, and campus facilities.">
+  <title>VIT Mumbai — College Enquiry AI Assistant</title>
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app-layout">
+  <!-- Mobile Drawer Backdrop -->
+  <div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- Left Sidebar (272px fixed desktop, slide drawer mobile) -->
+  <aside id="sidebar" class="sidebar" aria-label="Institute Navigation & Chat History">
+    <!-- Sidebar Header & Branding -->
+    <div class="sidebar-header">
+      <div class="brand">
+        <div class="brand-crest" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" class="crest-svg" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="#0f243d"/>
+            <path d="M16 4L3 11L16 18L29 11L16 4Z" fill="#00d2ff"/>
+            <path d="M7 13.5V20.5C7 22.8 11 25 16 25C21 25 25 22.8 25 20.5V13.5L16 19.5L7 13.5Z" fill="#ffffff" fill-opacity="0.9"/>
+            <path d="M28 12.5V20H29.5V12.5H28Z" fill="#00d2ff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">VIT Mumbai</div>
+          <div class="brand-subtitle">Vidyalankar Institute of Technology</div>
+        </div>
+      </div>
+      <button id="closeDrawerBtn" class="drawer-close-btn" type="button" aria-label="Close navigation drawer">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Institute Badges Pill -->
+    <div class="sidebar-credentials">
+      <span class="cred-tag"><span class="cred-dot"></span>Autonomous</span>
+      <span class="cred-tag"><span class="cred-dot cyan"></span>NAAC A+</span>
+      <span class="cred-tag">DTE 3139</span>
+    </div>
+
+    <!-- Primary Action: New Chat -->
+    <div class="sidebar-action-wrap">
+      <button id="sidebarNewChatBtn" class="new-chat-btn" type="button" title="Start a fresh conversation (Ctrl+K)">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span>New Conversation</span>
+        <kbd class="shortcut-hint">Ctrl K</kbd>
+      </button>
+    </div>
+
+    <!-- Scrollable Sidebar Content -->
+    <div class="sidebar-content">
+      
+      <!-- Section 1: Quick Topic Navigator -->
+      <div class="sidebar-section">
+        <div class="section-label">COLLEGE ENQUIRY TOPICS</div>
+        <nav class="topic-nav" aria-label="College Enquiry Direct Topics">
+          <button class="topic-item" data-ask="What is the admission procedure and schedule for First Year B.Tech at VIT Mumbai?" type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <span class="topic-label">Admissions</span>
+            <span class="topic-badge">CAP</span>
+          </button>
+          
+          <button class="topic-item" data-ask="What B.Tech engineering courses and departments are available at VIT Mumbai, and what is their curriculum focus?" type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </span>
+            <span class="topic-label">Courses & Departments</span>
+          </button>
+
+          <button class="topic-item" data-ask="Provide the full approved fee structure for B.Tech at VIT Mumbai by category (Open, OBC, SC, ST, TFWS, Management Quota) and available scholarships." type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <span class="topic-label">Fees & Scholarships</span>
+            <span class="topic-badge verified">FRA</span>
+          </button>
+
+          <button class="topic-item" data-ask="What were the previous year MHT-CET and JEE Main cutoffs (Round 1, 2, 3 percentiles) for Computer Engineering, IT, ECS, and other branches at VIT Mumbai?" type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </span>
+            <span class="topic-label">Previous Year Cutoffs</span>
+            <span class="topic-badge">CET</span>
+          </button>
+
+          <button class="topic-item" data-ask="Explain the step-by-step admission process for VIT Mumbai via State CET Cell CAP rounds and Institute level seats." type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </span>
+            <span class="topic-label">Admission Process</span>
+          </button>
+
+          <button class="topic-item" data-ask="What is the eligibility criteria for First Year B.Tech and Direct Second Year Lateral Entry engineering admissions at VIT?" type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <span class="topic-label">Eligibility Criteria</span>
+          </button>
+
+          <button class="topic-item" data-ask="What are the recent placement records, highest & average packages, top recruiters, and internship opportunities at VIT Mumbai?" type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </span>
+            <span class="topic-label">Placements & Recruiters</span>
+          </button>
+
+          <button class="topic-item" data-ask="Where is the VIT Mumbai campus located, what are the nearby railway stations, and what are the official contact numbers and email addresses?" type="button">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="topic-label">Contact & Campus Location</span>
+          </button>
+
+          <a class="topic-item external" href="https://vit.edu.in/" target="_blank" rel="noopener noreferrer">
+            <span class="topic-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </span>
+            <span class="topic-label">Official VIT Website</span>
+            <span class="topic-ext-icon">↗</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Section 2: Recent Chat History -->
+      <div class="sidebar-section history-section">
+        <div class="section-label">RECENT CONVERSATIONS</div>
+        <div id="sessionsList" class="sessions-list">
+          <div class="session-empty-hint">Your saved chats will appear here</div>
+        </div>
+      </div>
+
+      <!-- Section 3: Grounding Badge -->
+      <div class="sidebar-grounding-card">
+        <div class="grounding-header">
+          <span class="pulse-indicator"></span>
+          <strong>Official RAG Grounding</strong>
+        </div>
+        <p>Answers are verified against official records from <a href="https://vit.edu.in/" target="_blank" rel="noopener noreferrer">vit.edu.in</a> with zero fabricated fees or cutoffs.</p>
+        <button id="refreshKbBtn" class="refresh-kb-btn" type="button" title="Sync & re-index official pages">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          <span>Sync Official Knowledge</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Sidebar Bottom Footer -->
+    <div class="sidebar-footer">
+      <button id="sidebarThemeToggleBtn" class="sidebar-theme-toggle-btn" type="button" aria-label="Toggle light and dark theme">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </span>
+        <span id="sidebarThemeToggleLabel" class="sidebar-theme-label">Dark Mode</span>
+      </button>
+      <div class="footer-inst">Vidyalankar Educational Campus, Mumbai</div>
+      <div class="footer-affil">Affiliated to University of Mumbai · Approved by AICTE</div>
+    </div>
+  </aside>
+
+  <!-- Main Chat Workspace -->
+  <main class="chat-workspace">
+    
+    <!-- Topbar Navigation Header -->
+    <header class="topbar">
+      <div class="topbar-start">
+        <button id="menuToggleBtn" class="menu-toggle-btn" type="button" aria-label="Toggle Navigation Drawer">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <div class="topbar-identity">
+          <div class="topbar-title-row">
+            <h1 class="topbar-title">VIT Assistant</h1>
+            <span class="topbar-badge">Official AI</span>
+          </div>
+          <div class="topbar-status-row">
+            <span class="status-dot"></span>
+            <span id="providerStatusLabel" class="status-label">Connecting to AI Service...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button id="openFeeModalBtn" class="topbar-btn fee-btn" type="button" title="View Official Fee Dashboard">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <span class="btn-text">Fee Dashboard</span>
+        </button>
+        <button id="themeToggleBtn" class="topbar-btn secondary theme-toggle-btn" type="button" title="Switch theme (Light / Dark)" aria-label="Toggle light and dark theme">
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span id="themeToggleLabel" class="btn-text">Theme</span>
+        </button>
+        <button id="exportBtn" class="topbar-btn secondary" type="button" title="Export conversation transcript (.txt)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span class="btn-text">Export</span>
+        </button>
+        <button id="clearBtn" class="topbar-btn primary" type="button" title="Start a fresh conversation">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span class="btn-text">New Chat</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Chat Messages Scroll Container -->
+    <section id="chatArea" class="chat-area" aria-live="polite">
+      <div class="chat-inner">
+        
+        <!-- Welcome Screen (Shown when no messages exist) -->
+        <div id="welcome" class="welcome-screen">
+          <div class="welcome-brand-mark">
+            <div class="crest-halo">
+              <svg viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="#0f243d"/>
+                <path d="M20 6L4 15L20 24L36 15L20 6Z" fill="#00d2ff"/>
+                <path d="M8.5 17.5V26.5C8.5 29.5 13.5 32 20 32C26.5 32 31.5 29.5 31.5 26.5V17.5L20 25.5L8.5 17.5Z" fill="#ffffff" fill-opacity="0.9"/>
+                <path d="M35 16.5V26H37V16.5H35Z" fill="#00d2ff"/>
+              </svg>
+            </div>
+            <div class="welcome-chip">VIDYALANKAR INSTITUTE OF TECHNOLOGY · MUMBAI</div>
+          </div>
+
+          <h2 class="welcome-heading">
+            Welcome to the Official <br>
+            <span class="welcome-gradient">VIT Mumbai Enquiry Assistant</span>
+          </h2>
+          
+          <p class="welcome-subheading">
+            Ask any questions about <strong>B.Tech admissions</strong>, <strong>branch cutoffs</strong> (MHT-CET / JEE), <strong>approved fee structures</strong>, <strong>scholarships</strong>, <strong>placements</strong>, and <strong>campus life</strong>. All information is strictly grounded in official records.
+          </p>
+
+          <!-- Curated Suggestion Cards Grid -->
+          <div class="suggestions-container">
+            <div class="suggestions-label">RECOMMENDED ENQUIRIES</div>
+            <div class="suggestions-grid">
+              
+              <button class="suggestion-card" data-question="What engineering courses (B.Tech) are offered at VIT Mumbai, and what is the eligibility criteria?">
+                <div class="sugg-header">
+                  <span class="sugg-icon blue">🎓</span>
+                  <span class="sugg-category">Courses</span>
+                </div>
+                <div class="sugg-title">B.Tech Degrees & Eligibility</div>
+                <div class="sugg-desc">Computer, IT, ECS, EXTC, Biomedical programs & CAP criteria</div>
+                <span class="sugg-action">Ask question →</span>
+              </button>
+
+              <button class="suggestion-card" data-question="What are the latest MHT-CET and JEE Main cutoffs (Round 1, 2, 3) for Computer Engineering and IT at VIT Mumbai?">
+                <div class="sugg-header">
+                  <span class="sugg-icon cyan">📊</span>
+                  <span class="sugg-category">Cutoffs</span>
+                </div>
+                <div class="sugg-title">Previous Year Cutoffs</div>
+                <div class="sugg-desc">Branch-wise closing percentiles, state merit ranks & choice codes</div>
+                <span class="sugg-action">Ask question →</span>
+              </button>
+
+              <button class="suggestion-card" data-question="What is the complete approved fee structure for B.Tech at VIT Mumbai for Open, OBC, SC, ST, EWS, TFWS, and Management Quota?">
+                <div class="sugg-header">
+                  <span class="sugg-icon gold">💰</span>
+                  <span class="sugg-category">Fees</span>
+                </div>
+                <div class="sugg-title">Fee Structure & Waivers</div>
+                <div class="sugg-desc">Tuition & development fees, 4-year totals & MahaDBT scholarships</div>
+                <span class="sugg-action">Ask question →</span>
+              </button>
+
+              <button class="suggestion-card" data-question="What are the placement statistics, highest & average packages, and top recruiters visiting VIT Mumbai?">
+                <div class="sugg-header">
+                  <span class="sugg-icon green">💼</span>
+                  <span class="sugg-category">Placements</span>
+                </div>
+                <div class="sugg-title">Placement Records & CTC</div>
+                <div class="sugg-desc">TCS, Infosys, Capgemini, Media.net, packages & T&P cell support</div>
+                <span class="sugg-action">Ask question →</span>
+              </button>
+
+              <button class="suggestion-card" data-question="How does Direct Second Year (Lateral Entry / DSE) engineering admission work for Polytechnic Diploma holders at VIT?">
+                <div class="sugg-header">
+                  <span class="sugg-icon purple">⚡</span>
+                  <span class="sugg-category">Lateral Entry</span>
+                </div>
+                <div class="sugg-title">Direct 2nd Year (DSE)</div>
+                <div class="sugg-desc">Eligibility, seat allocation, and CAP procedure for diploma students</div>
+                <span class="sugg-action">Ask question →</span>
+              </button>
+
+              <button class="suggestion-card" data-question="What is the official campus address of VIT Mumbai, how do I reach it from Dadar or Wadala, and what are the office contact details?">
+                <div class="sugg-header">
+                  <span class="sugg-icon red">📍</span>
+                  <span class="sugg-category">Campus</span>
+                </div>
+                <div class="sugg-title">Campus & Contact Details</div>
+                <div class="sugg-desc">Wadala campus directions, station connectivity & office timings</div>
+                <span class="sugg-action">Ask question →</span>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="welcome-footer-note">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Anti-hallucination guarantee: Answers are cross-referenced with official circulars from <strong>vit.edu.in</strong> and Maharashtra State CET Cell.</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Message Stream -->
+        <div id="messages" class="messages-stream"></div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Fixed Input Composer -->
+    <footer class="composer-container">
+      <div class="composer-inner">
+        <form id="chatForm" class="composer-card">
+          <textarea
+            id="messageInput"
+            rows="1"
+            maxlength="2000"
+            placeholder="Ask a question about VIT Mumbai (e.g. cutoffs, fee breakdown, courses, placements)..."
+            aria-label="Ask your enquiry question"
+            required
+          ></textarea>
+          
+          <button id="sendBtn" class="send-action-btn" type="submit" aria-label="Send question" title="Send question (Enter)">
+            <svg class="send-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+
+        <div class="composer-meta">
+          <div class="composer-hint">Press <kbd>Enter</kbd> to send · <kbd>Shift + Enter</kbd> for new line</div>
+          <div class="composer-source">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Verified with official <a href="https://vit.edu.in/" target="_blank" rel="noopener noreferrer">vit.edu.in</a> records</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<!-- ==========================================================================
+     Financial Dashboard Modal — Official VIT Fee Breakdown
+     ========================================================================== -->
+<div id="feeModal" class="fee-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="feeModalTitle" aria-hidden="true" hidden>
+  <div class="fee-modal-backdrop" id="feeModalBackdrop" aria-label="Close modal background"></div>
+  
+  <div class="fee-modal-card">
+    <!-- Modal Header -->
+    <div class="fee-modal-header">
+      <div class="fee-header-left">
+        <div class="fee-header-badge">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span>FINANCIAL DASHBOARD</span>
+        </div>
+        <h2 id="feeModalTitle" class="fee-modal-title">VIT Mumbai — Official Fee Structure</h2>
+        <p class="fee-modal-subtitle">Institute Code: 3139 · Approved by Fee Regulating Authority (FRA), Government of Maharashtra</p>
+      </div>
+      <button id="closeFeeModalBtn" class="fee-modal-close" type="button" aria-label="Close Fee Dashboard">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="fee-tabs-bar" role="tablist">
+      <button class="fee-tab-btn active" role="tab" aria-selected="true" data-tab="btech-cap">
+        <span>Undergraduate B.Tech (CAP Quota)</span>
+      </button>
+      <button class="fee-tab-btn" role="tab" aria-selected="false" data-tab="btech-il">
+        <span>Institute Level / Management Quota</span>
+      </button>
+      <button class="fee-tab-btn" role="tab" aria-selected="false" data-tab="pg-fees">
+        <span>Postgraduate (M.Tech & MMS)</span>
+      </button>
+      <button class="fee-tab-btn" role="tab" aria-selected="false" data-tab="scholarships">
+        <span>Scholarships & Concessions</span>
+      </button>
+    </div>
+
+    <!-- Scrollable Modal Body -->
+    <div class="fee-modal-body">
+      
+      <!-- TAB 1: B.Tech CAP Quota -->
+      <div id="tab-btech-cap" class="fee-tab-panel active" role="tabpanel">
+        
+        <!-- 4 Summary KPI Cards -->
+        <div class="fee-kpis-grid">
+          <div class="fee-kpi-card">
+            <div class="kpi-icon-row">
+              <span class="kpi-icon blue">💳</span>
+              <span class="kpi-badge">Standard Open</span>
+            </div>
+            <div class="kpi-label">Annual Tuition Fee</div>
+            <div class="kpi-val fee-amount">₹1,76,521</div>
+            <div class="kpi-sub">₹88,261 (OBC/EBC) · ₹0 (SC/ST/TFWS)</div>
+          </div>
+
+          <div class="fee-kpi-card">
+            <div class="kpi-icon-row">
+              <span class="kpi-icon gold">🏛</span>
+              <span class="kpi-badge fixed">Mandatory Fixed</span>
+            </div>
+            <div class="kpi-label">Development Fee</div>
+            <div class="kpi-val fee-amount">₹26,479</div>
+            <div class="kpi-sub">Statutory statutory fee for all categories</div>
+          </div>
+
+          <div class="fee-kpi-card highlight">
+            <div class="kpi-icon-row">
+              <span class="kpi-icon cyan">💰</span>
+              <span class="kpi-badge cyan">Annual Total</span>
+            </div>
+            <div class="kpi-label">Total Annual Fee (Open)</div>
+            <div class="kpi-val fee-amount highlight">₹2,03,000</div>
+            <div class="kpi-sub">₹1,14,740 (OBC) · ₹26,479 (SC/ST/TFWS)</div>
+          </div>
+
+          <div class="fee-kpi-card">
+            <div class="kpi-icon-row">
+              <span class="kpi-icon green">🎓</span>
+              <span class="kpi-badge green">4-Year Degree</span>
+            </div>
+            <div class="kpi-label">Estimated 4-Year Total</div>
+            <div class="kpi-val fee-amount">₹8,12,000</div>
+            <div class="kpi-sub">₹4,58,960 (OBC) · ₹1,05,916 (SC/ST/TFWS)</div>
+          </div>
+        </div>
+
+        <!-- Category-Wise Breakdown Table -->
+        <div class="fee-section-title-wrap">
+          <h3 class="fee-section-title">Approved Category-Wise Fee Breakdown</h3>
+          <span class="fee-section-sub">Academic Year 2024-25, 2025-26 & 2026-27 (4-Year B.Tech)</span>
+        </div>
+
+        <div class="fee-table-responsive" tabindex="0" role="region" aria-label="Category-wise Fee Breakdown Table">
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th style="min-width: 170px;">Admission Category</th>
+                <th style="min-width: 125px; text-align: right;">Tuition Fee</th>
+                <th style="min-width: 125px; text-align: right;">Development Fee</th>
+                <th style="min-width: 135px; text-align: right;">Total Annual Fee</th>
+                <th style="min-width: 140px; text-align: right;">Total 4-Year Fee</th>
+                <th style="min-width: 220px;">Subsidy & Concession Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="cat-cell">
+                    <strong>Open / General / ACAP</strong>
+                    <span class="cat-code">Code: OPEN</span>
+                  </div>
+                </td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,76,521</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹2,03,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹8,12,000</span></td>
+                <td><span class="concession-text">Standard FRA approved fee. EBC income concession available via MahaDBT if income ≤ ₹8L.</span></td>
+              </tr>
+              <tr class="highlight-row">
+                <td>
+                  <div class="cat-cell">
+                    <strong>OBC / EBC / EWS / SEBC</strong>
+                    <span class="cat-code cyan">50% Tuition Waiver</span>
+                  </div>
+                </td>
+                <td style="text-align: right;"><span class="fee-amount">₹88,261</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-cyan">₹1,14,740</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹4,58,960</span></td>
+                <td><span class="concession-text">50% tuition subsidy under Rajarshi Shahu Maharaj Scheme (MahaDBT) for family income ≤ ₹8 Lakhs.</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cat-cell">
+                    <strong>SC / ST / VJ / NT / SBC</strong>
+                    <span class="cat-code green">100% Tuition Waiver</span>
+                  </div>
+                </td>
+                <td style="text-align: right;"><span class="fee-amount zero">₹0</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-green">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,05,916</span></td>
+                <td><span class="concession-text">100% Tuition Fee reimbursed by Social Justice Dept. Only Development Fee payable.</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cat-cell">
+                    <strong>TFWS (Tuition Fee Waiver Scheme)</strong>
+                    <span class="cat-code purple">100% Merit Waiver</span>
+                  </div>
+                </td>
+                <td style="text-align: right;"><span class="fee-amount zero">₹0</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-purple">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,05,916</span></td>
+                <td><span class="concession-text">Allotted strictly on MHT-CET merit in CAP TFWS choice codes (5% supernumerary seats).</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cat-cell">
+                    <strong>J&amp;K Migrants / PMSSS</strong>
+                    <span class="cat-code">AICTE Scheme</span>
+                  </div>
+                </td>
+                <td style="text-align: right;"><span class="fee-amount zero">₹0</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,05,916</span></td>
+                <td><span class="concession-text">Tuition fee sponsored by Prime Minister's Special Scholarship Scheme (PMSSS).</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Scholarship Highlights Section -->
+        <div class="fee-scholarship-wrap">
+          <h4 class="fee-sub-heading">Government Concessions & Scholarship Portals</h4>
+          <div class="scholarship-cards-grid">
+            <div class="scholar-card">
+              <div class="scholar-icon">🌟</div>
+              <div class="scholar-body">
+                <strong>MahaDBT EBC / OBC Scholarship</strong>
+                <p>Eligible candidates get 50% waiver on tuition fees under Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Yojna.</p>
+                <div class="scholar-meta">Income Ceiling: ≤ ₹8,00,000 / year · Portal: mahadbt.maharashtra.gov.in</div>
+              </div>
+            </div>
+
+            <div class="scholar-card">
+              <div class="scholar-icon">🛡</div>
+              <div class="scholar-body">
+                <strong>Social Justice SC / ST Free-ship</strong>
+                <p>100% tuition fee waiver provided by Social Justice & Tribal Welfare Departments. Candidates pay only the development fee.</p>
+                <div class="scholar-meta">Requires valid Caste Certificate & Validity Certificate</div>
+              </div>
+            </div>
+
+            <div class="scholar-card">
+              <div class="scholar-icon">⚡</div>
+              <div class="scholar-body">
+                <strong>AICTE TFWS Merit Scheme</strong>
+                <p>100% tuition waiver for top merit candidates in CAP rounds under separate TFWS choice codes with zero income documentation hurdles.</p>
+                <div class="scholar-meta">Allotted through State CET Cell CAP Rounds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 2: Institute Level / Management Quota -->
+      <div id="tab-btech-il" class="fee-tab-panel" role="tabpanel">
+        <div class="fee-section-title-wrap">
+          <h3 class="fee-section-title">Institute Level (IL) / Management Quota Fees</h3>
+          <span class="fee-section-sub">Branch-Wise Approved Ceiling Rates for Non-CAP Quota</span>
+        </div>
+
+        <div class="fee-table-responsive" tabindex="0" role="region" aria-label="Management Quota Fees Table">
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th style="min-width: 220px;">Branch / Department</th>
+                <th style="min-width: 130px; text-align: right;">Tuition Fee</th>
+                <th style="min-width: 130px; text-align: right;">Development Fee</th>
+                <th style="min-width: 140px; text-align: right;">Total Annual Fee</th>
+                <th style="min-width: 150px; text-align: right;">Total 4-Year Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Computer Engineering</strong></td>
+                <td style="text-align: right;"><span class="fee-amount">₹3,47,825</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹52,175</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹4,00,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹16,00,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>Information Technology (IT)</strong></td>
+                <td style="text-align: right;"><span class="fee-amount">₹3,04,347</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹45,653</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹3,50,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹14,00,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>Electronics &amp; Computer Science (ECS)</strong></td>
+                <td style="text-align: right;"><span class="fee-amount">₹2,17,390</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹32,610</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹2,50,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹10,00,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>Electronics &amp; Telecommunication (EXTC)</strong></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,76,521</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹2,03,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹8,12,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>Biomedical Engineering</strong></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,76,521</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹26,479</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹2,03,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹8,12,000</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TAB 3: M.Tech & MMS (Postgraduate) -->
+      <div id="tab-pg-fees" class="fee-tab-panel" role="tabpanel">
+        <div class="fee-section-title-wrap">
+          <h3 class="fee-section-title">Postgraduate Programs Fee Structure</h3>
+          <span class="fee-section-sub">Master of Technology (M.Tech) & Master of Management Studies (MMS / MBA)</span>
+        </div>
+
+        <div class="fee-table-responsive" tabindex="0" role="region" aria-label="PG Programs Fee Table">
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th style="min-width: 180px;">Programme</th>
+                <th style="min-width: 140px;">Category</th>
+                <th style="min-width: 120px; text-align: right;">Tuition Fee</th>
+                <th style="min-width: 120px; text-align: right;">Development Fee</th>
+                <th style="min-width: 130px; text-align: right;">Annual Fee</th>
+                <th style="min-width: 140px; text-align: right;">Total Degree Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>M.Tech Engineering (2 Yrs)</strong></td>
+                <td>Open / Sponsored</td>
+                <td style="text-align: right;"><span class="fee-amount">₹73,913</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹11,087</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹85,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,70,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>MMS Management (2 Yrs)</strong></td>
+                <td>Open / General</td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,34,783</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹20,217</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-blue">₹1,55,000</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹3,10,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>MMS Management (2 Yrs)</strong></td>
+                <td>OBC / EBC (50% Tuition)</td>
+                <td style="text-align: right;"><span class="fee-amount">₹67,392</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹20,217</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-cyan">₹87,609</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹1,75,218</span></td>
+              </tr>
+              <tr>
+                <td><strong>MMS Management (2 Yrs)</strong></td>
+                <td>SC / ST / VJNT / SBC</td>
+                <td style="text-align: right;"><span class="fee-amount zero">₹0</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹20,217</span></td>
+                <td style="text-align: right;"><span class="fee-amount bold-green">₹20,217</span></td>
+                <td style="text-align: right;"><span class="fee-amount">₹40,434</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TAB 4: Scholarships & Concessions Details -->
+      <div id="tab-scholarships" class="fee-tab-panel" role="tabpanel">
+        <div class="fee-section-title-wrap">
+          <h3 class="fee-section-title">Scholarship Schemes & Eligibility Framework</h3>
+          <span class="fee-section-sub">MahaDBT Social Welfare Concessions for Vidyalankar Students</span>
+        </div>
+
+        <div class="scholarship-detailed-cards">
+          <div class="scholar-detail-item">
+            <div class="scholar-detail-head">
+              <span class="badge blue">EBC / SEBC / EWS</span>
+              <h4>Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Yojna</h4>
+            </div>
+            <p>Provides 50% concession on tuition fees for students admitted through CAP general merit whose total annual family income from all sources does not exceed ₹8,00,000.</p>
+            <div class="doc-list">
+              <strong>Key Documents Required:</strong> Income Certificate from Tahsildar (≤ ₹8 Lakhs), Domicile Certificate of Maharashtra, CAP Allotment Letter.
+            </div>
+          </div>
+
+          <div class="scholar-detail-item">
+            <div class="scholar-detail-head">
+              <span class="badge green">SC / ST / VJNT / SBC / OBC</span>
+              <h4>Government of India Post-Matric Scholarship & Free-ship</h4>
+            </div>
+            <p>100% tuition fee reimbursement for SC/ST students, and category-based tuition subsidies for VJNT/SBC/OBC students as per Maharashtra Social Justice Department norms.</p>
+            <div class="doc-list">
+              <strong>Key Documents Required:</strong> Caste Certificate, Caste Validity Certificate, Non-Creamy Layer (NCL) Certificate valid for the current academic session.
+            </div>
+          </div>
+
+          <div class="scholar-detail-item">
+            <div class="scholar-detail-head">
+              <span class="badge purple">TFWS Seats</span>
+              <h4>AICTE Tuition Fee Waiver Scheme (TFWS)</h4>
+            </div>
+            <p>Supernumerary seats created up to 5% of sanctioned intake. Students pay zero tuition fee throughout all 4 years. Allotted strictly on MHT-CET general merit in CAP rounds.</p>
+            <div class="doc-list">
+              <strong>Eligibility:</strong> Opted for TFWS choice code during CAP option entry; annual family income ≤ ₹8 Lakhs.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regulatory Disclaimer Note Banner -->
+      <div class="fee-disclaimer-banner">
+        <div class="disclaimer-icon">⚖</div>
+        <div class="disclaimer-content">
+          <strong>Mandatory Regulatory Verification Notice</strong>
+          <p>Academic tuition and development fees are officially fixed annually by the <strong>Fee Regulating Authority (FRA), Government of Maharashtra</strong> for Institute Code <strong>3139</strong>. Concession and scholarship eligibility are subject to candidate certificate verification on the official <strong>MahaDBT portal</strong>. Prospective students and parents must verify the latest authenticated circulars and installment schedules at <a href="https://vit.edu.in/admissions/" target="_blank" rel="noopener noreferrer">https://vit.edu.in/admissions/ ↗</a> before making payment.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Modal Footer Actions -->
+    <div class="fee-modal-footer">
+      <div class="modal-footer-left">
+        <a href="https://vit.edu.in/admissions/" target="_blank" rel="noopener noreferrer" class="fee-link-btn">
+          <span>Official VIT Admissions Portal ↗</span>
+        </a>
+      </div>
+      <button id="closeFeeModalFooterBtn" class="topbar-btn primary" type="button">Close Dashboard</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Feedback -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- JavaScript Client -->
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

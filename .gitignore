@@ -1,0 +1,41 @@
+# Environment variables & secrets (CRITICAL: Never commit credentials)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Local Databases (Contains local chat session transcripts)
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Vercel Deployment & Build artifacts
+.vercel/
+
+# Logs & Temporary Files
+*.log
+*.tmp
+scratch/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp

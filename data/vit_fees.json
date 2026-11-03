@@ -1,0 +1,208 @@
+{
+  "institute_code": "3139",
+  "institute_name": "Vidyalankar Institute of Technology (VIT), Mumbai",
+  "approved_by": "Fee Regulating Authority (FRA), Government of Maharashtra",
+  "currency": "INR (₹)",
+  "official_sources": [
+    {
+      "document": "Official VIT Fee Structure & Admission Notice",
+      "url": "https://vit.edu.in/admissions/",
+      "notes": "Approved annual tuition and development fee circulars published on official portal"
+    },
+    {
+      "document": "Fee Regulating Authority (FRA) Maharashtra Official Orders",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "notes": "Annual regulatory fee fixation orders for Institute Code 3139"
+    }
+  ],
+  "cap_fees": [
+    {
+      "programme": "Undergraduate B.Tech Engineering",
+      "degree": "B.Tech (4 Years)",
+      "branches": [
+        "Computer Engineering",
+        "Information Technology",
+        "Electronics & Computer Science",
+        "Electronics & Telecommunication Engineering",
+        "Biomedical Engineering"
+      ],
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "admission_quota": "CAP (Centralized Admission Process / General Merit / ACAP)",
+      "categories": [
+        {
+          "category": "Open / General / ACAP",
+          "category_code": "OPEN",
+          "tuition_fee": 176521,
+          "development_fee": 26479,
+          "other_fees": 0,
+          "total_annual_fee": 203000,
+          "total_four_year_fee": 812000,
+          "concession_details": "Standard approved fee without subsidy for non-reserved candidates.",
+          "scholarship_applicable": "None (Unless applying for EBC income-based concession via MahaDBT)"
+        },
+        {
+          "category": "OBC / EBC / EWS / SEBC",
+          "category_code": "OBC_EBC_EWS",
+          "tuition_fee": 88261,
+          "development_fee": 26479,
+          "other_fees": 0,
+          "total_annual_fee": 114740,
+          "total_four_year_fee": 458960,
+          "concession_details": "50% Tuition Fee waiver subsidized by the Government of Maharashtra via MahaDBT portal.",
+          "scholarship_applicable": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Yojna (EBC/OBC/EWS with family income ≤ ₹8 Lakhs)"
+        },
+        {
+          "category": "SC / ST / VJ / NT / SBC",
+          "category_code": "SC_ST_VJNT_SBC",
+          "tuition_fee": 0,
+          "development_fee": 26479,
+          "other_fees": 0,
+          "total_annual_fee": 26479,
+          "total_four_year_fee": 105916,
+          "concession_details": "100% Tuition Fee waiver provided by Social Justice and Tribal Development Departments. Only Development Fee is payable.",
+          "scholarship_applicable": "Government of India Post-Matric Scholarship / Free-ship via MahaDBT portal"
+        },
+        {
+          "category": "TFWS (Tuition Fee Waiver Scheme)",
+          "category_code": "TFWS",
+          "tuition_fee": 0,
+          "development_fee": 26479,
+          "other_fees": 0,
+          "total_annual_fee": 26479,
+          "total_four_year_fee": 105916,
+          "concession_details": "100% Tuition Fee waiver awarded strictly on merit through CAP TFWS choice codes. Only Development Fee is payable.",
+          "scholarship_applicable": "AICTE approved state-allotted supernumerary seat"
+        },
+        {
+          "category": "J&K Migrants / PMSSS",
+          "category_code": "JK_PMSSS",
+          "tuition_fee": 0,
+          "development_fee": 26479,
+          "other_fees": 0,
+          "total_annual_fee": 26479,
+          "total_four_year_fee": 105916,
+          "concession_details": "Tuition fees disbursed under Prime Minister's Special Scholarship Scheme (PMSSS) / J&K quota.",
+          "scholarship_applicable": "AICTE PMSSS Scheme"
+        }
+      ]
+    },
+    {
+      "programme": "Postgraduate M.Tech Engineering",
+      "degree": "M.Tech (2 Years)",
+      "branches": [
+        "Computer Engineering",
+        "Electronics & Telecommunication Engineering"
+      ],
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "admission_quota": "CAP / Merit",
+      "categories": [
+        {
+          "category": "Open / Sponsored / All Categories",
+          "category_code": "OPEN",
+          "tuition_fee": 73913,
+          "development_fee": 11087,
+          "other_fees": 0,
+          "total_annual_fee": 85000,
+          "total_two_year_fee": 170000,
+          "concession_details": "Approved annual fee for M.Tech programs as per FRA regulatory sanction."
+        }
+      ]
+    },
+    {
+      "programme": "Postgraduate Management Studies (MMS)",
+      "degree": "MMS / MBA (2 Years)",
+      "branches": ["Master of Management Studies (MMS)"],
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "admission_quota": "CAP / Merit",
+      "categories": [
+        {
+          "category": "Open / General",
+          "category_code": "OPEN",
+          "tuition_fee": 134783,
+          "development_fee": 20217,
+          "other_fees": 0,
+          "total_annual_fee": 155000,
+          "total_two_year_fee": 310000,
+          "concession_details": "Standard approved annual fee for 2-year full-time MMS program."
+        },
+        {
+          "category": "OBC / EBC",
+          "category_code": "OBC_EBC",
+          "tuition_fee": 67392,
+          "development_fee": 20217,
+          "other_fees": 0,
+          "total_annual_fee": 87609,
+          "total_two_year_fee": 175218,
+          "concession_details": "50% Tuition Fee concession via MahaDBT scholarship."
+        },
+        {
+          "category": "SC / ST / VJNT / SBC",
+          "category_code": "SC_ST",
+          "tuition_fee": 0,
+          "development_fee": 20217,
+          "other_fees": 0,
+          "total_annual_fee": 20217,
+          "total_two_year_fee": 40434,
+          "concession_details": "100% Tuition Fee waiver via MahaDBT portal."
+        }
+      ]
+    }
+  ],
+  "institutional_fees": [
+    {
+      "branch": "Computer Engineering",
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "quota": "Institute Level (IL) / Management Quota",
+      "tuition_fee": 347825,
+      "development_fee": 52175,
+      "total_annual_fee": 400000,
+      "total_four_year_fee": 1600000,
+      "source_url": "https://vit.edu.in/admissions/",
+      "notes": "Approved annual fee for Institute Level seats in Computer Engineering."
+    },
+    {
+      "branch": "Information Technology",
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "quota": "Institute Level (IL) / Management Quota",
+      "tuition_fee": 304347,
+      "development_fee": 45653,
+      "total_annual_fee": 350000,
+      "total_four_year_fee": 1400000,
+      "source_url": "https://vit.edu.in/admissions/",
+      "notes": "Approved annual fee for Institute Level seats in Information Technology."
+    },
+    {
+      "branch": "Electronics & Computer Science",
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "quota": "Institute Level (IL) / Management Quota",
+      "tuition_fee": 217390,
+      "development_fee": 32610,
+      "total_annual_fee": 250000,
+      "total_four_year_fee": 1000000,
+      "source_url": "https://vit.edu.in/admissions/",
+      "notes": "Approved annual fee for Institute Level seats in Electronics & Computer Science."
+    },
+    {
+      "branch": "Electronics & Telecommunication Engineering",
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "quota": "Institute Level (IL) / Management Quota",
+      "tuition_fee": 176521,
+      "development_fee": 26479,
+      "total_annual_fee": 203000,
+      "total_four_year_fee": 812000,
+      "source_url": "https://vit.edu.in/admissions/",
+      "notes": "Same as approved standard CAP base fee for EXTC."
+    },
+    {
+      "branch": "Biomedical Engineering",
+      "academic_years": ["2024-25", "2025-26", "2026-27"],
+      "quota": "Institute Level (IL) / Management Quota",
+      "tuition_fee": 176521,
+      "development_fee": 26479,
+      "total_annual_fee": 203000,
+      "total_four_year_fee": 812000,
+      "source_url": "https://vit.edu.in/admissions/",
+      "notes": "Same as approved standard CAP base fee for Biomedical Engineering."
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "metadata": {
+    "source": "https://vit.edu.in/",
+    "last_updated": "2026-10-22T17:27:35.309026+00:00",
+    "chunk_count": 28
+  },
+  "official_pages": [
+    {
+      "category": "Institute Overview",
+      "title": "About VIT Mumbai & Institute Profile",
+      "url": "https://vit.edu.in/about-us/",
+      "priority": 1.2
+    },
+    {
+      "category": "Admissions",
+      "title": "Admissions Hub & Central Portal",
+      "url": "https://vit.edu.in/admissions/",
+      "priority": 1.4
+    },
+    {
+      "category": "Undergraduate Admissions",
+      "title": "B.Tech Undergraduate Admissions (First Year)",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "priority": 1.5
+    },
+    {
+      "category": "Lateral Entry Admissions",
+      "title": "Direct Second Year (DSE) Engineering Admissions",
+      "url": "https://vit.edu.in/admission-engineering-lateral-entry/",
+      "priority": 1.3
+    },
+    {
+      "category": "Postgraduate Admissions",
+      "title": "M.Tech Engineering Admissions",
+      "url": "https://vit.edu.in/admission-engineering-pg/",
+      "priority": 1.2
+    },
+    {
+      "category": "Management Admissions",
+      "title": "MMS (Master of Management Studies) Admissions",
+      "url": "https://vit.edu.in/admission-mms/",
+      "priority": 1.2
+    },
+    {
+      "category": "Placements",
+      "title": "Training & Placement Cell Information",
+      "url": "https://vit.edu.in/placement/",
+      "priority": 1.4
+    },
+    {
+      "category": "Contact & Campus",
+      "title": "Campus Location, Directions & Contact Information",
+      "url": "https://vit.edu.in/contact/",
+      "priority": 1.5
+    },
+    {
+      "category": "Academics",
+      "title": "Credit Transfer Courses & Academic Offerings",
+      "url": "https://vit.edu.in/credit-transfer-course/",
+      "priority": 1.0
+    }
+  ],
+  "chunks": [
+    {
+      "id": "vit-general-overview",
+      "title": "Vidyalankar Institute of Technology (VIT), Mumbai Overview",
+      "url": "https://vit.edu.in/about-us/",
+      "category": "Institute Overview",
+      "content": "Vidyalankar Institute of Technology (VIT) is an engineering and management institute situated at Wadala (East), Mumbai - 400037, Maharashtra. Established in 1999, it is an Autonomous Institute permanently affiliated to the University of Mumbai, approved by the All India Council for Technical Education (AICTE), and recognized by the Directorate of Technical Education (DTE), Government of Maharashtra.\nAccreditation & Recognition:\n- NAAC Grade 'A+' accredited institute.\n- National Board of Accreditation (NBA) accredited eligible engineering programs.\n- Known for its modern infrastructure, industry-academic alliances, and vibrant student life.",
+      "keywords": [
+        "vit",
+        "mumbai",
+        "vidyalankar",
+        "overview",
+        "naac",
+        "a+",
+        "autonomous",
+        "aicte",
+        "university of mumbai",
+        "wadala",
+        "accreditation",
+        "established 1999"
+      ]
+    },
+    {
+      "id": "vit-btech-programs-overview",
+      "title": "Undergraduate B.Tech Degree Programs Offered",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "category": "Courses",
+      "content": "VIT Mumbai offers 4-year full-time Undergraduate Bachelor of Technology (B.Tech) degree programs:\n1. Computer Engineering: Focuses on software engineering, algorithms, cloud computing, operating systems, and distributed systems.\n2. Information Technology (IT): Emphasizes software design, web technologies, database management, cybersecurity, and data analytics.\n3. Electronics & Computer Science (ECS): Blends embedded hardware systems with modern computer science, algorithms, and AI/ML.\n4. Electronics & Telecommunication Engineering (EXTC): Covers wireless communication, 5G/IoT networks, RF systems, signal processing, and robotics.\n5. Biomedical Engineering: Bridges medical healthcare technologies, clinical instrumentation, biomechanics, and physiological signal analysis.\nCurriculum highlights: Autonomous curriculum designed with industry inputs, offering Honors and Minor degrees, credit transfer programs, and extensive project-based learning.",
+      "keywords": [
+        "btech",
+        "courses",
+        "branches",
+        "programs",
+        "computer engineering",
+        "it",
+        "information technology",
+        "extc",
+        "ecs",
+        "biomedical",
+        "degrees",
+        "undergraduate",
+        "ug",
+        "curriculum"
+      ]
+    },
+    {
+      "id": "vit-branch-comparison",
+      "title": "Comparison of Engineering Branches at VIT Mumbai",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "category": "Courses",
+      "content": "Choosing between engineering disciplines at VIT Mumbai:\n- Computer Engineering vs Information Technology: Computer Engineering deals deeply with computing architecture, systems programming, and algorithms, while IT focuses on enterprise applications, data management, cloud computing, and cyber security. Both share outstanding placement opportunities in top software and consulting firms.\n- Electronics & Computer Science (ECS): Best for students who want dual expertise in software programming and hardware/IoT interfacing. Prepares graduates for both tech software roles and embedded systems/semiconductor careers.\n- Electronics & Telecommunication (EXTC): Focuses on telecommunications, IoT, embedded systems, and robotics with high placement overlap in tech companies and telecom giants.\n- Biomedical Engineering: Distinct niche field combining engineering principles with medical instrumentation, medical imaging, and healthcare diagnostics.",
+      "keywords": [
+        "compare",
+        "comparison",
+        "difference",
+        "computer vs it",
+        "ecs vs extc",
+        "branch selection",
+        "which branch",
+        "career options",
+        "courses"
+      ]
+    },
+    {
+      "id": "vit-ug-admission-process",
+      "title": "First Year B.Tech Engineering Admission Process & Eligibility",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "category": "Admissions",
+      "content": "First Year Engineering Admissions are conducted under the Centralized Admission Process (CAP) administered by the State Common Entrance Test Cell, Maharashtra.\nEligibility Requirements:\n1. Candidate must be an Indian National.\n2. Passed HSC (Std. XII) or its equivalent examination with Physics and Mathematics as compulsory subjects, along with one of Chemistry, Biotechnology, Biology, Technical Vocational subject, Computer Science, or Information Technology.\n3. Obtained at least 45% marks (at least 40% marks for backward class categories, EWS, and PwD candidates of Maharashtra State).\n4. Valid score in MHT-CET (for Maharashtra State quota) or JEE (Main) Paper-I (for All India seats).\nStep-by-step CAP Round Process:\n- Step 1: Online registration on the State CET Cell portal (https://cetcell.mahacet.org/).\n- Step 2: Document verification and confirmation at Facilitation Centers (FC) / e-Scrutiny.\n- Step 3: Display of Provisional and Final Merit Lists.\n- Step 4: Online Option Form submission for CAP Rounds (choice filling of VIT college code).\n- Step 5: Seat Allotment (Freeze / Betterment) and reporting to the institute with original documents and fees.\nInstitutional / Against CAP vacancy seats are notified on https://vit.edu.in/admission-engineering-ug/.",
+      "keywords": [
+        "admission",
+        "eligibility",
+        "btech",
+        "first year",
+        "cap",
+        "cap round",
+        "mht-cet",
+        "jee main",
+        "dte",
+        "cet cell",
+        "criteria",
+        "entrance exam",
+        "steps",
+        "documents",
+        "process"
+      ]
+    },
+    {
+      "id": "vit-lateral-entry",
+      "title": "Direct Second Year Engineering (DSE / Lateral Entry) Admissions",
+      "url": "https://vit.edu.in/admission-engineering-lateral-entry/",
+      "category": "Admissions",
+      "content": "Diploma holders and B.Sc. graduates can seek direct admission into the 2nd Year (Semester 3) of B.Tech programs.\nEligibility Criteria:\n- Passed 3-year AICTE-approved Diploma in Engineering & Technology with at least 45% marks (40% for reserved/EWS/PwD candidates from Maharashtra).\n- OR passed B.Sc. Degree from a recognized UGC university with at least 45% marks (40% for reserved candidates) and passed Std. XII with Mathematics.\nAdmission Route: Administered through Maharashtra State CET Cell CAP rounds. Visit https://vit.edu.in/admission-engineering-lateral-entry/ for current year category cutoffs and intake notices.",
+      "keywords": [
+        "direct second year",
+        "dse",
+        "lateral entry",
+        "diploma",
+        "polytechnic",
+        "second year",
+        "admission",
+        "cap",
+        "b.sc"
+      ]
+    },
+    {
+      "id": "vit-pg-programs",
+      "title": "Postgraduate M.Tech Engineering Admissions & Specializations",
+      "url": "https://vit.edu.in/admission-engineering-pg/",
+      "category": "Courses",
+      "content": "VIT Mumbai offers Master of Technology (M.Tech) degrees for engineering graduates:\n- M.Tech in Computer Engineering\n- M.Tech in Electronics & Telecommunication Engineering\nEligibility: Bachelor's degree in relevant branch of engineering (B.E./B.Tech) with at least 50% marks (45% for reserved categories) and a qualifying GATE score or sponsored candidate criteria as prescribed by DTE Maharashtra.\nOfficial page: https://vit.edu.in/admission-engineering-pg/",
+      "keywords": [
+        "mtech",
+        "postgraduate",
+        "pg",
+        "master",
+        "gate",
+        "computer engineering",
+        "extc",
+        "admission"
+      ]
+    },
+    {
+      "id": "vit-mms-program",
+      "title": "Master of Management Studies (MMS) Admissions",
+      "url": "https://vit.edu.in/admission-mms/",
+      "category": "Courses",
+      "content": "The 2-year full-time MMS program at VIT Mumbai is approved by AICTE and affiliated to University of Mumbai.\nSpecializations Offered: Finance, Marketing, Human Resources (HR), Operations, and Systems.\nEligibility & Admission:\n- Bachelor's Degree of minimum 3 years duration with minimum 50% aggregate marks (45% for reserved categories of Maharashtra).\n- Valid percentile score in MAH-MBA/MMS-CET, CAT, or CMAT.\n- Admissions are processed through State CET Cell CAP Rounds. Official page: https://vit.edu.in/admission-mms/",
+      "keywords": [
+        "mms",
+        "mba",
+        "management",
+        "business",
+        "mah-cet",
+        "cat",
+        "cmat",
+        "admission",
+        "finance",
+        "marketing",
+        "hr",
+        "operations"
+      ]
+    },
+    {
+      "id": "vit-placements",
+      "title": "Training & Placement Cell and Career Support",
+      "url": "https://vit.edu.in/placement/",
+      "category": "Placements",
+      "content": "VIT Mumbai has a dedicated Training and Placement (T&P) Cell that prepares students throughout their degree:\n- Pre-placement training: Coding challenges, data structures bootcamps, aptitude preparation, group discussion practice, and mock technical interviews with corporate alumni.\n- Top Recruiters: TCS, Infosys, Capgemini, LTI (L&T Infotech), Reliance Jio, Barclays, Worley, Zeus Learning, Media.net, Morgan Stanley, and emerging product startups.\n- Internship Support: Summer and winter industrial internships arranged with leading tech firms.\nOfficial Placement Page: https://vit.edu.in/placement/ (provides audited annual batch reports, highest packages, average CTC, and recruiter brochures).",
+      "keywords": [
+        "placement",
+        "jobs",
+        "recruiters",
+        "salary",
+        "package",
+        "tcs",
+        "infosys",
+        "highest package",
+        "average package",
+        "companies",
+        "internships",
+        "training and placement",
+        "t&p"
+      ]
+    },
+    {
+      "id": "vit-fees-scholarships",
+      "title": "Fee Structure & Government Scholarship Guidelines",
+      "url": "https://vit.edu.in/admissions/",
+      "category": "Fees",
+      "content": "Academic tuition and development fees at VIT Mumbai are officially determined annually by the Fee Regulating Authority (FRA), Government of Maharashtra.\nScholarships & Concessions:\n- Economically Backward Class (EBC): 50% tuition fee waiver for eligible students via the MahaDBT portal.\n- Tuition Fee Waiver Scheme (TFWS): 100% tuition fee waiver for top meritorious students allotted through CAP TFWS seats.\n- Reserved Categories (SC / ST / VJNT / SBC / OBC): Government scholarship schemes covering partial or full tuition/exam fees as per social justice department norms.\n- Official fee circulars: Because fees and installment schedules are governed by FRA regulatory circulars, candidates must inspect the authenticated fee schedule at https://vit.edu.in/admissions/.",
+      "keywords": [
+        "fees",
+        "fee structure",
+        "cost",
+        "scholarship",
+        "fra",
+        "mahadbt",
+        "ebc",
+        "tfws",
+        "sc",
+        "st",
+        "obc",
+        "installment",
+        "tuition fee"
+      ]
+    },
+    {
+      "id": "vit-campus-facilities",
+      "title": "Campus Life, Labs, Library & Student Facilities",
+      "url": "https://vit.edu.in/about-us/",
+      "category": "Campus",
+      "content": "Campus Facilities at Vidyalankar Educational Campus, Wadala:\n- Smart Classrooms: Centrally air-conditioned amphitheater-style classrooms with high-resolution digital projection.\n- Advanced Labs: Apple iOS developer lab, IoT/AI research laboratories, High-Performance Computing (HPC) lab, and robotics cell.\n- Central Library: Extensive collection of text and reference books, national/international journals, e-books, IEEE digital library access, and reading halls.\n- Student Bodies & Activities: IEEE Student Branch, ACM Chapter, CSI, Entrepreneurship Cell (E-Cell), Verve annual cultural festival, and inter-collegiate sports events.",
+      "keywords": [
+        "campus",
+        "facilities",
+        "library",
+        "labs",
+        "smart classroom",
+        "wifi",
+        "sports",
+        "canteen",
+        "infrastructure",
+        "clubs",
+        "verve",
+        "events",
+        "apple lab"
+      ]
+    },
+    {
+      "id": "vit-contact-location",
+      "title": "VIT Mumbai Campus Location & Official Contact Information",
+      "url": "https://vit.edu.in/contact/",
+      "category": "Contact",
+      "content": "Campus Address:\nVidyalankar Institute of Technology, Vidyalankar Educational Campus, Vidyalankar College Marg, Wadala (East), Mumbai - 400 037, Maharashtra, India.\nCommuting & Accessibility:\n- Closest Harbour Line Station: Wadala Road Station (approx. 10-15 minutes by share cab/bus).\n- Closest Central/Western Junction: Dadar Station (approx. 15-20 minutes by cab/bus).\n- Monorail: Vadala Bridge / Bhakti Park monorail stations are nearby.\nOfficial Contact Portal: https://vit.edu.in/contact/\nAdministrative Working Hours: Monday to Saturday during standard college office hours.",
+      "keywords": [
+        "contact",
+        "address",
+        "location",
+        "phone",
+        "email",
+        "office",
+        "reach",
+        "wadala",
+        "mumbai",
+        "directions",
+        "station",
+        "dadar",
+        "monorail"
+      ]
+    },
+    {
+      "id": "scraped-about-vit-mumbai-institute-profile-1",
+      "title": "About VIT Mumbai & Institute Profile",
+      "url": "https://vit.edu.in/about-us/",
+      "category": "Institute Overview",
+      "content": "of students & alumni community VIT’s Accomplishments Celebrating Excellence The Institute is accredited by National Assessment and Accreditation Council (NAAC): A+The following courses are accredited by National Board of Accreditation (NBA): Information Technology, Computer Engineering, Biomedical Engineering, Electronics Engineering, and Electronics and Telecommunication Engineering. Six Decades of Learning Experience The Institute is a part of the Vidyalankar Group which was established almost six decades ago, and which has been making surefooted strides in the domain of education ever since. Accreditation Recently Vidyalankar Institute of Technology has achieved accreditation with an A+ Grade by National Assessment and Accreditation Council (NAAC), which is a significant milestone in our journey of success. Personal Excellence for Holistic Learning Special emphasis is also laid on connecting the students to the courses so that they may learn to comprehend and apply thought rather than simply read and remember. Our focus is not on merely covering the syllabus; instead we prioritize on uncovering the course to reveal the possibilities it has in store for our learners. We extend intellectual and logistic support to our students when they decide to walk that extra mile.",
+      "keywords": [
+        "institute",
+        "profile",
+        "institute",
+        "overview"
+      ],
+      "scraped_at": "2026-10-22T17:27:06.865039+00:00"
+    },
+    {
+      "id": "scraped-about-vit-mumbai-institute-profile-2",
+      "title": "About VIT Mumbai & Institute Profile (Part 2)",
+      "url": "https://vit.edu.in/about-us/",
+      "category": "Institute Overview",
+      "content": "Suffused with Creativity & Innovation Creativity and innovation are highly valued here and we give students ample opportunities to showcase their talents. State of the art Infrastructure The Institute emphasizes on providing a digitally enabled learning environment which ensures that learning takes place effectively and is in tune with fulfilling the educational requirements of tech-savvy millennials. Honing Industry Ready Professionals We nurture and polish young minds and guide them to face the challenges of the professional world by making them academically competent and industry-ready by strengthening their technical skills as well as honing their soft skills. At Vidyalankar, we promote excellence in all spheres as we consider the holistic development of every student as important as their academic achievements and motivate them to become socially responsible global citizens. your future begins at VIT mumbai From the Desk of Dr. Sangeeta Joshi, Principal, Vidyalankar Institute of Technology Being true to oneself and others; being trustworthy and straightforward in all our professional and personal dealings. To walk on the path of honesty and fairness, irrespective of the consequences that may ensue.",
+      "keywords": [
+        "institute",
+        "profile",
+        "institute",
+        "overview"
+      ],
+      "scraped_at": "2026-10-22T17:27:06.865118+00:00"
+    },
+    {
+      "id": "scraped-about-vit-mumbai-institute-profile-3",
+      "title": "About VIT Mumbai & Institute Profile (Part 3)",
+      "url": "https://vit.edu.in/about-us/",
+      "category": "Institute Overview",
+      "content": "Unwaveringly adhering to moral and ethical principles and upholding righteous behaviour. Developing strength of character, which is absolutely incorruptible at any point in the teaching-learning process and in one’s academic and professional life. Setting high standards and quality benchmarks for one self and endeavoring to reach them. Doing the very best one can in every task that one accomplishes. Aiming for personal, academic and professional excellence and never compromising with mediocrity. Being aware of and shouldering one’s responsibilities towards self, institute, home and society. Acquire the inner belief to fulfil one’s responsibilities to the best of one’s abilities. Being accountable for one’s actions; practicing what one preaches and leading by example. Complete dedication and thorough engagement towards work. Inculcating loyalty and developing a sense of ownership. To be sincere in approach, adhere to deadlines and have a result-oriented approach. Nurturing and promoting a feeling of well-being and a healthy and wholesome academic and professional environment. An attitude that is favorable to develop a healthy body, mind and character. To be a globally recognized institute where learners are nurtured in a scholarly environment to evolve into competent professionals and researchers to benefit society.",
+      "keywords": [
+        "institute",
+        "profile",
+        "institute",
+        "overview"
+      ],
+      "scraped_at": "2026-10-22T17:27:06.865169+00:00"
+    },
+    {
+      "id": "scraped-about-vit-mumbai-institute-profile-4",
+      "title": "About VIT Mumbai & Institute Profile (Part 4)",
+      "url": "https://vit.edu.in/about-us/",
+      "category": "Institute Overview",
+      "content": "Evolve a curriculum which emphasizes on strong fundamentals with the flexibility to choose advanced courses of interest and gain exposure to tools and techniques in contemporary subjects. Encourage a teaching-learning process in which highly competent faculty share a symbiotic association with institutes of repute. Facilitate creation and dissemination of knowledge through a digitally-enabled learning environment. Develop academic and infrastructural facilities with modern equipment and other learning resources and encourage reciprocal sharing with other institutes through networking. Establish a Center of Excellence to enhance academia-industry partnership and work on collaborative projects. Vidyalankar Dnyanapeeth Trust Chief Academic Officer Chief Operating officer VIT MAGAZINES & PUBLICATIONS.",
+      "keywords": [
+        "institute",
+        "profile",
+        "institute",
+        "overview"
+      ],
+      "scraped_at": "2026-10-22T17:27:06.865212+00:00"
+    },
+    {
+      "id": "scraped-admissions-hub-central-portal-1",
+      "title": "Admissions Hub & Central Portal",
+      "url": "https://vit.edu.in/admissions/",
+      "category": "Admissions",
+      "content": "Explore a wide range of programmes equipped with state of art facilities, experienced faculty, interaction with eminent experts, and best infrastructure with modern amenities to aid learning that is industry ready. First Year Admissions 2026-27 Direct Second Year Admissions 2026-27 First Year Admissions 2026-27 First Year Admissions 2026-27 First Year Admissions 2026-27 \" Everyday at VIT is filled with opportunities - Hackathons, Internships, Workshops and many more.. \" \" vLive, vPrint and vRefer are the best utilities in the campus. \" \" The splendid library of VIT is one of the best places to read books, technical magazines and newspapers. \" \" The most unique concept at VIT labs is - Problem Based Experiments. \" \" The most unique concept at VIT labs is - Problem Based Experiments. \" \" The best part about VIT are its Brilliant Teachers. \" B.Tech. in Information Technology The Information Technology Department of Vidyalankar Institute of Technology was established in the year 1999. The department believes in the success formula of: People, Process, Technology as integral components for successful… B.Tech. in Computer Engineering Students aspiring for engineering admission always prefer VIT’s Computer Engineering Department.",
+      "keywords": [
+        "admissions",
+        "hub",
+        "central",
+        "portal",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:10.448606+00:00"
+    },
+    {
+      "id": "scraped-admissions-hub-central-portal-2",
+      "title": "Admissions Hub & Central Portal (Part 2)",
+      "url": "https://vit.edu.in/admissions/",
+      "category": "Admissions",
+      "content": "One of our special features is that many excellent teachers who have the knack of explaining any subject in simple language that students can… Students aspiring for engineering admission always prefer VIT’s Computer Engineering Department. One of our special features is that many excellent teachers who have the knack of explaining any subject in simple language that students can… B.Tech. in Electronics and Computer Science The Department of Electronics & Computer Science (formerly known as Electronics department) is accredited by National Board of Accreditation (NBA) and is a part of an Institute… B.Tech. in Electronics and Telecommunication Engineering The excellent quality of technical educations imparted by the EXTC department is endorsed by accreditation given by competent authorities like “National Board of Accreditation… The excellent quality of technical educations imparted by the EXTC department is endorsed by accreditation given by competent authorities like “National Board of Accreditation… B.Tech. in Biomedical Engineering The Biomedical Engineering Department at Vidyalankar was started in the year 2006 with a view to develop skilled health care engineering professionals by nurturing them in a scholarly environment.",
+      "keywords": [
+        "admissions",
+        "hub",
+        "central",
+        "portal",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:10.448674+00:00"
+    },
+    {
+      "id": "scraped-admissions-hub-central-portal-3",
+      "title": "Admissions Hub & Central Portal (Part 3)",
+      "url": "https://vit.edu.in/admissions/",
+      "category": "Admissions",
+      "content": "M.Tech. in Computer Engineering Students aspiring for engineering admission always prefer VIT’s Computer Engineering Department. One of our special features is that many excellent teachers who have the knack… Students aspiring for engineering admission always prefer VIT’s Computer Engineering Department. One of our special features is that many excellent teachers who have the knack… M.Tech. in Electronics and Telecommunication Engineering The excellent quality of technical educations imparted by the EXTC department is endorsed by accreditation given by… Master of Management Studies What started with baby steps in 2007, VIT Department of Management Studies has today emerged as a reputed Management Education department at the Mumbai university. Ph.D. in Electronics and Telecommunication Engineering Ph.D. in Computer Engineering TOP AUTONOMOUS ENGINEERING INSTITUTE Industry-Ready Engineering Education.",
+      "keywords": [
+        "admissions",
+        "hub",
+        "central",
+        "portal",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:10.448716+00:00"
+    },
+    {
+      "id": "scraped-b-tech-undergraduate-admissions-first-year-1",
+      "title": "B.Tech Undergraduate Admissions (First Year)",
+      "url": "https://vit.edu.in/admission-engineering-ug/",
+      "category": "Undergraduate Admissions",
+      "content": "Undergraduate ENGINEERING ADMISSION UG ENGINEERING ADMISSIONS FOR B.TECH. COURSES, A.Y. 2026-27 Institute Quota and ACAP Admissions 2026-27 CAP Round Admission 2026-27 CAP Round First Year Engineering Admission Details 2026-27 for all B.Tech. Courses at VIT For admission enquiry, please contact: – 8657035173/022 24161126 (Monday to Saturday, 9 am to 5 pm) https://whatsapp.com/channel/0029VaUbi9p5q08UowbZnb13.",
+      "keywords": [
+        "btech",
+        "tech",
+        "engineering",
+        "undergraduate",
+        "undergraduate",
+        "admissions",
+        "first",
+        "year",
+        "undergraduate",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:13.839145+00:00"
+    },
+    {
+      "id": "scraped-direct-second-year-dse-engineering-admissions-1",
+      "title": "Direct Second Year (DSE) Engineering Admissions",
+      "url": "https://vit.edu.in/admission-engineering-lateral-entry/",
+      "category": "Lateral Entry Admissions",
+      "content": "Direct Second Year Engineering Admissions for B.Tech. Courses, A.Y. 2026-27 (DSE) Against CAP Admission 2026-27 CAP Round Admission 2026-27 CAP Round Direct Second Year Engineering Admission Details 2026-27 for all B.Tech. Courses at VIT For admission enquiry, please contact: – 9321130448 /022 24161126 (Monday to Saturday, 9 am to 5 pm) https://whatsapp.com/channel/0029VaUbi9p5q08UowbZnb13.",
+      "keywords": [
+        "direct",
+        "second",
+        "year",
+        "dse",
+        "lateral",
+        "direct",
+        "second",
+        "year",
+        "polytechnic",
+        "diploma",
+        "engineering",
+        "admissions",
+        "lateral",
+        "entry",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:17.132453+00:00"
+    },
+    {
+      "id": "scraped-m-tech-engineering-admissions-1",
+      "title": "M.Tech Engineering Admissions",
+      "url": "https://vit.edu.in/admission-engineering-pg/",
+      "category": "Postgraduate Admissions",
+      "content": "Post Graduation Engineering Admission PG Engineering Admissions for M.Tech. Courses, A.Y. 2026-27 IL/ACAP Admission 2026-27 CAP Round Admission 2026-27 CAP Round Admission Details 2026-27 for all M.Tech. Courses at VIT For admission enquiry, please contact: – 9029809011/022 24161126 (Monday to Saturday, 9 am to 5 pm) https://whatsapp.com/channel/0029VaUbi9p5q08UowbZnb13.",
+      "keywords": [
+        "mtech",
+        "master",
+        "postgraduate",
+        "engineering",
+        "admissions",
+        "postgraduate",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:20.504140+00:00"
+    },
+    {
+      "id": "scraped-mms-master-of-management-studies-admissions-1",
+      "title": "MMS (Master of Management Studies) Admissions",
+      "url": "https://vit.edu.in/admission-mms/",
+      "category": "Management Admissions",
+      "content": "Master of Management Studies Admission Thank you for showing interest in VIT. Admission Enquiry Form 2024-25 (MMS) Admission Enquiry Form 2025-26 (MMS) Prof. Jay Bhatt +91 9821222513 For admission enquiry, please contact : - Prof. Jay Bhatt +91 9821222513 Please keep visiting this web page for admission related information. PG ADMISSIONS FOR MMS A.Y. 2026-27 Institute Quota and ACAP Admissions 2026-27 CAP Round Admission 2026-27 CAP Round First Year MMS Admission Details 2026-27 at VIT For admission enquiry, please contact: – 9821222513/022 24161126 (Monday to Saturday, 9 am to 5 pm) https://whatsapp.com/channel/0029VaUbi9p5q08UowbZnb13.",
+      "keywords": [
+        "mms",
+        "mba",
+        "management",
+        "master",
+        "management",
+        "studies",
+        "admissions",
+        "management",
+        "admissions"
+      ],
+      "scraped_at": "2026-10-22T17:27:23.968060+00:00"
+    },
+    {
+      "id": "scraped-training-placement-cell-information-1",
+      "title": "Training & Placement Cell Information",
+      "url": "https://vit.edu.in/placement/",
+      "category": "Placements",
+      "content": "Highest salary Package Offered Top-notch Placement Support Top-notch Placement Support Top-notch Placement Support Top-notch Placement Support Highest salary Package Offered COMPANY WISE PLACEMENTS VIT prioritizes campus recruitment and in a well-defined process, trains and prepares its job aspirants meticulously and ensures that a majority of students are placed at reputed organizations. The institute aims at providing organizations with talent who are an appropriate fit for the corporate world’s needs. The Training and Placement Cell, led by a senior and experienced person, has a focused approach on preparing students for recruitment. The institute maintains strong ties with the industry and arranges opportunities for student interactions through industrial visits, guest lectures, internships, conferences and workshops to help them to get a corporate perspective. PLACEMENT oUTCOME @VIT Campus Placements by Indian Navy Campus Placements by TCS Campus Placements by Works Applications The Campus Connect Program The Campus Connect Program An industry-academia partnership initiative Facilitates the alignment of engineering student’s skills with the industry requirements to create industry-ready professionals.",
+      "keywords": [
+        "training",
+        "placement",
+        "jobs",
+        "recruiters",
+        "ctc",
+        "salary",
+        "package",
+        "cell",
+        "information",
+        "placements"
+      ],
+      "scraped_at": "2026-10-22T17:27:28.427826+00:00"
+    },
+    {
+      "id": "scraped-training-placement-cell-information-2",
+      "title": "Training & Placement Cell Information (Part 2)",
+      "url": "https://vit.edu.in/placement/",
+      "category": "Placements",
+      "content": "The Career Counselling Cell at VIT Guides students on the career opportunities available, skills, practical training and languages useful to enhance employability. Dale Carnegie Training Program Is imparted to all students in two well defined modules-'Generation Next' in the First Year and 'Step Upto Professional Excellence' in the Third Year with emphasis on basic communication etiquette and pre-recruitment training. Subject Specific Aptitude Tests Aptitude and subject specific tests for 3rd year students, gives them feedback on their performance and areas of improvement. COMPREHENSIVE PREPLACEMENT TRAINING Focus on imparting technological abilities for application at the work place, personality development, enhancing communication skills, and extensive exercises to inculcate analytical and verbal abilities to empower job aspirants. The students are trained on aspects like: The motive behind these training sessions is to improve: Communication Abilities CV and Interview skills Dr. Prashant Lokhande Email Id: prashant.lokhande@vit.edu.in Office Location: M102 Office Timings: 9.00am to 6.00pm Companies which would like to recruit freshers visit the institutes, conduct the process of recruitment and recruit the students when they are in final year of engineering.",
+      "keywords": [
+        "training",
+        "placement",
+        "jobs",
+        "recruiters",
+        "ctc",
+        "salary",
+        "package",
+        "cell",
+        "information",
+        "placements"
+      ],
+      "scraped_at": "2026-10-22T17:27:28.427961+00:00"
+    },
+    {
+      "id": "scraped-training-placement-cell-information-3",
+      "title": "Training & Placement Cell Information (Part 3)",
+      "url": "https://vit.edu.in/placement/",
+      "category": "Placements",
+      "content": "It will be a day-long process. Normally, the campus placement procedure takes place in the middle of the seventh semester. It starts in the month of September and goes on till the end of the academic year and sometimes even beyond that. Only those students who meet the eligibilty criteria given by the companies can participate. Students interested in the campus placements should register themselves with the placement cell when the notice is put up on Vidyalankarlive for the same. Various companies have different eligibility criteria. However, there are companies which do not have any eligibility criteria. All the students studying in the final year will become eligible in that case. Some of the eligibility criteria to participate in the campus placements are given below: Engineering aggregate marks – 60% Can/cannot have live KTs Can/cannot have Dead KTs Can/cannot have Gap during Engineering/Gap during education Companies will have all the above or some as the eligibility criteria. The following are the stages of recruitment: Aptitude Test/Technical Test (Online/Pen and Paper) Technical/HR Interview. MR (Management Round) Interview. Consists of verbal reasoning, logical reasoning and mathematics. Duration of the test varies, depending on the company.",
+      "keywords": [
+        "training",
+        "placement",
+        "jobs",
+        "recruiters",
+        "ctc",
+        "salary",
+        "package",
+        "cell",
+        "information",
+        "placements"
+      ],
+      "scraped_at": "2026-10-22T17:27:28.428042+00:00"
+    },
+    {
+      "id": "scraped-training-placement-cell-information-4",
+      "title": "Training & Placement Cell Information (Part 4)",
+      "url": "https://vit.edu.in/placement/",
+      "category": "Placements",
+      "content": "Every company has minimum marks section-wise or overall. Some companies have negative marking also Those who clear the aptitude test will go to the next round of the selection process. Group discussion is conducted to evaluate the students on the basis of knowledge on current affairs, communication, leadership qualities and group behavior. Those who clear the group discussion will go to the next round of the selection process. HR interviews are conducted to evaluate soft skills and confidence. It ensures that the company is not only hiring a person who is good technically but also someone who fits in to the company and its culture. The attitude of the students is tested in this round of interview. When a student is giving personal interview, how he/she enters and walks in to the room, how he/she sits, how and what he/she answers are all important. Conducted to test the technical knowledge of the students. Questions will be asked on the basics of engineering subjects studied. In case a student has done any certification course, his knowledge in that area is also tested. Yes. It will be declared on the same day by many companies. But a few companies will mail the results later. College identity card. Updated resume in the given format (3 copies) Original and photocopies of mark sheets and other certification if any.",
+      "keywords": [
+        "training",
+        "placement",
+        "jobs",
+        "recruiters",
+        "ctc",
+        "salary",
+        "package",
+        "cell",
+        "information",
+        "placements"
+      ],
+      "scraped_at": "2026-10-22T17:27:28.428119+00:00"
+    },
+    {
+      "id": "scraped-campus-location-directions-contact-information-1",
+      "title": "Campus Location, Directions & Contact Information",
+      "url": "https://vit.edu.in/contact/",
+      "category": "Contact & Campus",
+      "content": "From Dadar TT/Babasaheb Ambedkar Road Dadar TT – Parasi Colony – Five Garden – Wadala Bridge – Take right at the end of the bridge – Take left at the Barakat Ali naka signal – follow small road along the hill on the left side – take right at the junction – follow straight road ending at the Vidyalankar Campus From Navi Mumbai / Chembur Take Chembur-Sion way – turn left at Vasantdada Engg College Turn rt at Dava Shankar Chowk – Take right turn when you see hill in front of you – follow small road along the hill on the left side – take right at the junction – follow straight road ending at the Vidyalankar Campus Continue straight from Khalsa College – Take left turn on Wadala bridge – Take right at the end of the bridge – Take left at the Barakat Ali naka signal – follow small road along the hill on the left side – take right at the junction – follow straight road ending at the Vidyalankar Campus From Dadar TT/Babasaheb Ambedkar Road Dadar TT - Parasi Colony - Five Garden - Wadala Bridge - Take right at the end of the bridge - Take left at the Barakat Ali naka signal - follow small road along the hill on the left side - take right at the junction - follow straight road ending at the Vidyalankar Campus From Navi Mumbai / Chembur Take Chembur-Sion way - turn left at Vasantdada Engg College Turn rt at Dava Shankar Chowk - Take right turn when you see hill in front of you - follow small road along the hill on the left side - take right at the junction - follow straight road ending at the Vidyalankar Campus From Sion Continue straight from Khalsa College - Take left turn on Wadala bridge - Take right at the end of the bridge -Take left at the Barakat Ali naka signal - follow small road along the hill on the left side - take right at the junction - follow straight road ending at the Vidyalankar Campus Dadar TT – Parasi Colony – Five Garden – Wadala Bridge – Take right at the end of the bridge – Take left at the Barakat Ali naka signal – follow small road along the hill on t",
+      "keywords": [
+        "campus",
+        "location",
+        "directions",
+        "contact",
+        "information",
+        "contact",
+        "campus"
+      ],
+      "scraped_at": "2026-10-22T17:27:31.887399+00:00"
+    },
+    {
+      "id": "scraped-credit-transfer-courses-academic-offerings-1",
+      "title": "Credit Transfer Courses & Academic Offerings",
+      "url": "https://vit.edu.in/credit-transfer-course/",
+      "category": "Academics",
+      "content": "VIT's Credit Transfer Courses Vidyalankar Institute of Technology’s unique Credit Transfer Program offers an opportunity to our students to attend courses in top institutes like Indian Institute of Technology Bombay (IITB), Indian Institute of Management, Mumbai (IIM-M), Centre for Development of Advanced Computing (C-DAC), National Institute of Securities Markets (NISM). Under the autonomous revised curriculum and in line with NEP 2020, VIT offered courses for 4 credits that 650+ students completed during the summer break between the fourth and fifth semesters (June 2024), and our learners benefited from diverse pedagogies and academic cultures..",
+      "keywords": [
+        "credit",
+        "transfer",
+        "courses",
+        "academic",
+        "offerings",
+        "academics"
+      ],
+      "scraped_at": "2026-10-22T17:27:35.308929+00:00"
+    }
+  ]
+}

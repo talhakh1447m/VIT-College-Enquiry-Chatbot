@@ -1,0 +1,339 @@
+{
+  "institute_code": "3139",
+  "institute_name": "Vidyalankar Institute of Technology, Wadala, Mumbai",
+  "status": "Autonomous Institute Affiliated to University of Mumbai",
+  "home_university": "Mumbai University (MU)",
+  "official_sources": [
+    {
+      "source_name": "Government of Maharashtra State Common Entrance Test Cell — Centralized Admission Process (CAP) Allotment Archives",
+      "url": "https://cetcell.mahacet.org/",
+      "portal_url": "https://fe2026.mahacet.org/"
+    },
+    {
+      "source_name": "VIT Mumbai Official Undergraduate Engineering Cutoff Archives",
+      "url": "https://vit.edu.in/admission-engineering-ug/"
+    }
+  ],
+  "records": [
+    {
+      "academic_year": "2025-26",
+      "exam": "MHT-CET",
+      "branch": "Computer Engineering",
+      "choice_code": "313924510",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 97.75, "unit": "Percentile (%ile)", "merit_rank": 6120, "description": "General Open State Level" },
+            "LOPENS": { "value": 97.48, "unit": "Percentile (%ile)", "merit_rank": 6845, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.85, "unit": "Percentile (%ile)", "merit_rank": 8410, "description": "General OBC State Level" },
+            "LOBCS": { "value": 96.52, "unit": "Percentile (%ile)", "merit_rank": 9230, "description": "Ladies OBC State Level" },
+            "GSCS": { "value": 89.65, "unit": "Percentile (%ile)", "merit_rank": 26840, "description": "General SC State Level" },
+            "GSTS": { "value": 72.40, "unit": "Percentile (%ile)", "merit_rank": 68450, "description": "General ST State Level" },
+            "EWS": { "value": 97.20, "unit": "Percentile (%ile)", "merit_rank": 7580, "description": "Economically Weaker Section" },
+            "TFWS": { "value": 98.42, "unit": "Percentile (%ile)", "merit_rank": 4210, "description": "Tuition Fee Waiver Scheme" },
+            "AI_JEE": { "value": 4820, "unit": "All India JEE Main Rank", "description": "All India JEE Main Merit Rank" }
+          }
+        },
+        {
+          "round": "CAP Round 2",
+          "cutoffs": {
+            "GOPENS": { "value": 97.58, "unit": "Percentile (%ile)", "merit_rank": 6540, "description": "General Open State Level" },
+            "LOPENS": { "value": 97.30, "unit": "Percentile (%ile)", "merit_rank": 7280, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.60, "unit": "Percentile (%ile)", "merit_rank": 8920, "description": "General OBC State Level" },
+            "GSCS": { "value": 88.90, "unit": "Percentile (%ile)", "merit_rank": 28410, "description": "General SC State Level" },
+            "EWS": { "value": 97.05, "unit": "Percentile (%ile)", "merit_rank": 7920, "description": "Economically Weaker Section" },
+            "TFWS": { "value": 98.25, "unit": "Percentile (%ile)", "merit_rank": 4650, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 97.51, "unit": "Percentile (%ile)", "merit_rank": 6780, "description": "General Open State Level" },
+            "LOPENS": { "value": 97.22, "unit": "Percentile (%ile)", "merit_rank": 7510, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.48, "unit": "Percentile (%ile)", "merit_rank": 9250, "description": "General OBC State Level" },
+            "GSCS": { "value": 88.45, "unit": "Percentile (%ile)", "merit_rank": 29850, "description": "General SC State Level" },
+            "EWS": { "value": 96.90, "unit": "Percentile (%ile)", "merit_rank": 8290, "description": "Economically Weaker Section" },
+            "TFWS": { "value": 98.15, "unit": "Percentile (%ile)", "merit_rank": 4920, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2025-26",
+      "exam": "MHT-CET",
+      "branch": "Information Technology",
+      "choice_code": "313924610",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 97.10, "unit": "Percentile (%ile)", "merit_rank": 7820, "description": "General Open State Level" },
+            "LOPENS": { "value": 96.82, "unit": "Percentile (%ile)", "merit_rank": 8510, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.05, "unit": "Percentile (%ile)", "merit_rank": 10420, "description": "General OBC State Level" },
+            "GSCS": { "value": 86.80, "unit": "Percentile (%ile)", "merit_rank": 33900, "description": "General SC State Level" },
+            "EWS": { "value": 96.45, "unit": "Percentile (%ile)", "merit_rank": 9400, "description": "Economically Weaker Section" },
+            "TFWS": { "value": 97.80, "unit": "Percentile (%ile)", "merit_rank": 5980, "description": "Tuition Fee Waiver Scheme" },
+            "AI_JEE": { "value": 6240, "unit": "All India JEE Main Rank", "description": "All India JEE Main Merit Rank" }
+          }
+        },
+        {
+          "round": "CAP Round 2",
+          "cutoffs": {
+            "GOPENS": { "value": 96.90, "unit": "Percentile (%ile)", "merit_rank": 8310, "description": "General Open State Level" },
+            "LOPENS": { "value": 96.65, "unit": "Percentile (%ile)", "merit_rank": 8940, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 95.80, "unit": "Percentile (%ile)", "merit_rank": 11100, "description": "General OBC State Level" },
+            "GSCS": { "value": 85.90, "unit": "Percentile (%ile)", "merit_rank": 36120, "description": "General SC State Level" },
+            "TFWS": { "value": 97.65, "unit": "Percentile (%ile)", "merit_rank": 6390, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 96.80, "unit": "Percentile (%ile)", "merit_rank": 8580, "description": "General Open State Level" },
+            "LOPENS": { "value": 96.50, "unit": "Percentile (%ile)", "merit_rank": 9320, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 95.65, "unit": "Percentile (%ile)", "merit_rank": 11520, "description": "General OBC State Level" },
+            "GSCS": { "value": 85.40, "unit": "Percentile (%ile)", "merit_rank": 37400, "description": "General SC State Level" },
+            "TFWS": { "value": 97.55, "unit": "Percentile (%ile)", "merit_rank": 6650, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2025-26",
+      "exam": "MHT-CET",
+      "branch": "Electronics & Computer Science",
+      "choice_code": "313984410",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 95.40, "unit": "Percentile (%ile)", "merit_rank": 12150, "description": "General Open State Level" },
+            "GOBCS": { "value": 93.80, "unit": "Percentile (%ile)", "merit_rank": 16400, "description": "General OBC State Level" },
+            "GSCS": { "value": 82.30, "unit": "Percentile (%ile)", "merit_rank": 44800, "description": "General SC State Level" },
+            "TFWS": { "value": 96.65, "unit": "Percentile (%ile)", "merit_rank": 8950, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 94.90, "unit": "Percentile (%ile)", "merit_rank": 13520, "description": "General Open State Level" },
+            "GOBCS": { "value": 93.20, "unit": "Percentile (%ile)", "merit_rank": 17950, "description": "General OBC State Level" },
+            "GSCS": { "value": 81.50, "unit": "Percentile (%ile)", "merit_rank": 46900, "description": "General SC State Level" },
+            "TFWS": { "value": 96.25, "unit": "Percentile (%ile)", "merit_rank": 9890, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2025-26",
+      "exam": "MHT-CET",
+      "branch": "Electronics & Telecommunication Engineering",
+      "choice_code": "313937210",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 94.20, "unit": "Percentile (%ile)", "merit_rank": 15300, "description": "General Open State Level" },
+            "GOBCS": { "value": 92.10, "unit": "Percentile (%ile)", "merit_rank": 20850, "description": "General OBC State Level" },
+            "GSCS": { "value": 78.60, "unit": "Percentile (%ile)", "merit_rank": 53900, "description": "General SC State Level" },
+            "TFWS": { "value": 95.80, "unit": "Percentile (%ile)", "merit_rank": 11150, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 93.60, "unit": "Percentile (%ile)", "merit_rank": 16900, "description": "General Open State Level" },
+            "GOBCS": { "value": 91.40, "unit": "Percentile (%ile)", "merit_rank": 22600, "description": "General OBC State Level" },
+            "GSCS": { "value": 77.20, "unit": "Percentile (%ile)", "merit_rank": 57100, "description": "General SC State Level" },
+            "TFWS": { "value": 95.30, "unit": "Percentile (%ile)", "merit_rank": 12400, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2025-26",
+      "exam": "MHT-CET",
+      "branch": "Biomedical Engineering",
+      "choice_code": "313989310",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 88.50, "unit": "Percentile (%ile)", "merit_rank": 29600, "description": "General Open State Level" },
+            "GOBCS": { "value": 76.40, "unit": "Percentile (%ile)", "merit_rank": 59100, "description": "General OBC State Level" },
+            "GSCS": { "value": 68.20, "unit": "Percentile (%ile)", "merit_rank": 78400, "description": "General SC State Level" },
+            "TFWS": { "value": 91.80, "unit": "Percentile (%ile)", "merit_rank": 21600, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 86.80, "unit": "Percentile (%ile)", "merit_rank": 33800, "description": "General Open State Level" },
+            "GOBCS": { "value": 73.90, "unit": "Percentile (%ile)", "merit_rank": 64800, "description": "General OBC State Level" },
+            "GSCS": { "value": 65.40, "unit": "Percentile (%ile)", "merit_rank": 84900, "description": "General SC State Level" },
+            "TFWS": { "value": 90.40, "unit": "Percentile (%ile)", "merit_rank": 25100, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2024-25",
+      "exam": "MHT-CET",
+      "branch": "Computer Engineering",
+      "choice_code": "313924510",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 97.59, "unit": "Percentile (%ile)", "merit_rank": 7220, "description": "General Open State Level" },
+            "LOPENS": { "value": 97.35, "unit": "Percentile (%ile)", "merit_rank": 7913, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.72, "unit": "Percentile (%ile)", "merit_rank": 8750, "description": "General OBC State Level" },
+            "GSCS": { "value": 89.15, "unit": "Percentile (%ile)", "merit_rank": 27900, "description": "General SC State Level" },
+            "EWS": { "value": 97.10, "unit": "Percentile (%ile)", "merit_rank": 7800, "description": "Economically Weaker Section" },
+            "TFWS": { "value": 98.33, "unit": "Percentile (%ile)", "merit_rank": 4450, "description": "Tuition Fee Waiver Scheme" },
+            "AI_JEE": { "value": 5120, "unit": "All India JEE Main Rank", "description": "All India JEE Main Merit Rank" }
+          }
+        },
+        {
+          "round": "CAP Round 2",
+          "cutoffs": {
+            "GOPENS": { "value": 97.35, "unit": "Percentile (%ile)", "merit_rank": 7913, "description": "General Open State Level" },
+            "LOPENS": { "value": 97.10, "unit": "Percentile (%ile)", "merit_rank": 8610, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.40, "unit": "Percentile (%ile)", "merit_rank": 9500, "description": "General OBC State Level" },
+            "GSCS": { "value": 88.50, "unit": "Percentile (%ile)", "merit_rank": 29600, "description": "General SC State Level" },
+            "TFWS": { "value": 98.10, "unit": "Percentile (%ile)", "merit_rank": 5010, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 97.24, "unit": "Percentile (%ile)", "merit_rank": 8210, "description": "General Open State Level" },
+            "LOPENS": { "value": 97.05, "unit": "Percentile (%ile)", "merit_rank": 8780, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 96.30, "unit": "Percentile (%ile)", "merit_rank": 9810, "description": "General OBC State Level" },
+            "GSCS": { "value": 88.10, "unit": "Percentile (%ile)", "merit_rank": 30500, "description": "General SC State Level" },
+            "EWS": { "value": 96.85, "unit": "Percentile (%ile)", "merit_rank": 8420, "description": "Economically Weaker Section" },
+            "TFWS": { "value": 98.05, "unit": "Percentile (%ile)", "merit_rank": 5190, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2024-25",
+      "exam": "MHT-CET",
+      "branch": "Information Technology",
+      "choice_code": "313924610",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 96.54, "unit": "Percentile (%ile)", "merit_rank": 9210, "description": "General Open State Level" },
+            "LOPENS": { "value": 96.25, "unit": "Percentile (%ile)", "merit_rank": 9950, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 95.60, "unit": "Percentile (%ile)", "merit_rank": 11650, "description": "General OBC State Level" },
+            "GSCS": { "value": 85.80, "unit": "Percentile (%ile)", "merit_rank": 36400, "description": "General SC State Level" },
+            "TFWS": { "value": 97.45, "unit": "Percentile (%ile)", "merit_rank": 6920, "description": "Tuition Fee Waiver Scheme" },
+            "AI_JEE": { "value": 6780, "unit": "All India JEE Main Rank", "description": "All India JEE Main Merit Rank" }
+          }
+        },
+        {
+          "round": "CAP Round 2",
+          "cutoffs": {
+            "GOPENS": { "value": 96.21, "unit": "Percentile (%ile)", "merit_rank": 10050, "description": "General Open State Level" },
+            "LOPENS": { "value": 95.95, "unit": "Percentile (%ile)", "merit_rank": 10720, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 95.25, "unit": "Percentile (%ile)", "merit_rank": 12510, "description": "General OBC State Level" },
+            "GSCS": { "value": 84.90, "unit": "Percentile (%ile)", "merit_rank": 38700, "description": "General SC State Level" },
+            "TFWS": { "value": 97.20, "unit": "Percentile (%ile)", "merit_rank": 7510, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 96.42, "unit": "Percentile (%ile)", "merit_rank": 9510, "description": "General Open State Level" },
+            "LOPENS": { "value": 96.10, "unit": "Percentile (%ile)", "merit_rank": 10320, "description": "Ladies Open State Level" },
+            "GOBCS": { "value": 95.30, "unit": "Percentile (%ile)", "merit_rank": 12380, "description": "General OBC State Level" },
+            "GSCS": { "value": 84.40, "unit": "Percentile (%ile)", "merit_rank": 40100, "description": "General SC State Level" },
+            "TFWS": { "value": 97.10, "unit": "Percentile (%ile)", "merit_rank": 7820, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2024-25",
+      "exam": "MHT-CET",
+      "branch": "Electronics & Computer Science",
+      "choice_code": "313984410",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 95.18, "unit": "Percentile (%ile)", "merit_rank": 12750, "description": "General Open State Level" },
+            "GOBCS": { "value": 93.40, "unit": "Percentile (%ile)", "merit_rank": 17400, "description": "General OBC State Level" },
+            "GSCS": { "value": 81.60, "unit": "Percentile (%ile)", "merit_rank": 46600, "description": "General SC State Level" },
+            "TFWS": { "value": 96.40, "unit": "Percentile (%ile)", "merit_rank": 9520, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 94.57, "unit": "Percentile (%ile)", "merit_rank": 14350, "description": "General Open State Level" },
+            "GOBCS": { "value": 92.70, "unit": "Percentile (%ile)", "merit_rank": 19250, "description": "General OBC State Level" },
+            "GSCS": { "value": 80.80, "unit": "Percentile (%ile)", "merit_rank": 48700, "description": "General SC State Level" },
+            "TFWS": { "value": 96.05, "unit": "Percentile (%ile)", "merit_rank": 10420, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2024-25",
+      "exam": "MHT-CET",
+      "branch": "Electronics & Telecommunication Engineering",
+      "choice_code": "313937210",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 93.97, "unit": "Percentile (%ile)", "merit_rank": 15900, "description": "General Open State Level" },
+            "GOBCS": { "value": 91.80, "unit": "Percentile (%ile)", "merit_rank": 21600, "description": "General OBC State Level" },
+            "GSCS": { "value": 77.90, "unit": "Percentile (%ile)", "merit_rank": 55400, "description": "General SC State Level" },
+            "TFWS": { "value": 95.50, "unit": "Percentile (%ile)", "merit_rank": 11900, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 93.38, "unit": "Percentile (%ile)", "merit_rank": 17500, "description": "General Open State Level" },
+            "GOBCS": { "value": 91.05, "unit": "Percentile (%ile)", "merit_rank": 23550, "description": "General OBC State Level" },
+            "GSCS": { "value": 76.50, "unit": "Percentile (%ile)", "merit_rank": 58900, "description": "General SC State Level" },
+            "TFWS": { "value": 95.05, "unit": "Percentile (%ile)", "merit_rank": 13050, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    },
+    {
+      "academic_year": "2024-25",
+      "exam": "MHT-CET",
+      "branch": "Biomedical Engineering",
+      "choice_code": "313989310",
+      "rounds": [
+        {
+          "round": "CAP Round 1",
+          "cutoffs": {
+            "GOPENS": { "value": 88.16, "unit": "Percentile (%ile)", "merit_rank": 30450, "description": "General Open State Level" },
+            "GOBCS": { "value": 75.80, "unit": "Percentile (%ile)", "merit_rank": 60500, "description": "General OBC State Level" },
+            "GSCS": { "value": 67.50, "unit": "Percentile (%ile)", "merit_rank": 80100, "description": "General SC State Level" },
+            "TFWS": { "value": 91.20, "unit": "Percentile (%ile)", "merit_rank": 23100, "description": "Tuition Fee Waiver Scheme" }
+          }
+        },
+        {
+          "round": "CAP Round 3",
+          "cutoffs": {
+            "GOPENS": { "value": 85.07, "unit": "Percentile (%ile)", "merit_rank": 38200, "description": "General Open State Level" },
+            "GOBCS": { "value": 72.80, "unit": "Percentile (%ile)", "merit_rank": 67400, "description": "General OBC State Level" },
+            "GSCS": { "value": 64.20, "unit": "Percentile (%ile)", "merit_rank": 87800, "description": "General SC State Level" },
+            "TFWS": { "value": 89.80, "unit": "Percentile (%ile)", "merit_rank": 26700, "description": "Tuition Fee Waiver Scheme" }
+          }
+        }
+      ]
+    }
+  ]
+}
