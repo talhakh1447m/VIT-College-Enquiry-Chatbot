@@ -609,7 +609,13 @@ def request_entity_too_large(_error):
 
 @app.errorhandler(404)
 def not_found(_error):
-    return jsonify({"error": "Resource not found"}), 404
+    return jsonify({
+        "error": "Resource not found",
+        "path": request.path,
+        "full_path": request.full_path,
+        "headers": dict(request.headers),
+        "environ": {k: str(v) for k, v in request.environ.items() if k.startswith(("HTTP_", "PATH_", "REQUEST_", "RAW_"))}
+    }), 404
 
 
 if __name__ == "__main__":
